@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive;
+  background: linear-gradient(135deg, #ffccff, #ccffff);
+  overflow: hidden;
+}
+
+.sparkle-bg {
+  padding: 50px;
+  text-align: center;
+  animation: sparkle 5s infinite;
+}
+
+@keyframes sparkle {
+  0% { background-color: #ffccff; }
+  50% { background-color: #ccffff; }
+  100% { background-color: #ffccff; }
+}
+
+.rainbow-text {
+  font-size: 3em;
+  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.magic-button {
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 20px;
+  background: #ff69b4;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ff69b4;
+  animation: shake 1s infinite alternate;
+}
+
+@keyframes shake {
+  0% { transform: rotate(-2deg); }
+  100% { transform: rotate(2deg); }
+}
+
+.fairy-box {
+  font-size: 5em;
+  margin-top: 30px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
